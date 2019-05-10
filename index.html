@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Human2Anime</title>
     <script src="js/lib/tf.min.js"></script> <!-- 0.15.3 -->
-    <script  src="js/sketch.js" type="text/javascript"></script>
+    <script  src="js/script.js" type="text/javascript"></script>
+    <script src="js/lib/p5.min.js" type="text/javascript"></script>
+    <script src="js/lib/p5.dom.min.js" type="text/javascript"></script>
+    <script src="js/lib/p5.sound.min.js" type="text/javascript"></script>
+
 </head>
 
 <body>
-    <img id="img" src="img/obama.jpg" width="256" height="256">
+    <div id="origin">  <!-- Here lies my p5js sketch--> </div>
     <br><br>
-    <a id="load" href="#" onclick="javascript:loadInput()" >What did Monet Draw?</a>
+    <canvas id="intermediary" width="256" height="256"></canvas>
     <br><br>
-    <canvas id="outputCanvas" width="256" height="256"></canvas>
-    <br><br>
-    <a id="predict" href="#" onclick="javascript:predict()">What did Monet See!!</a>
+
+    
+    <script src="js/sketch.js" type="text/javascript"></script>
 </body>
 
 </html>
