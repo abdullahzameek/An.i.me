@@ -1,0 +1,22 @@
+{
+  "name": "anime",
+  "version": "1.0.0",
+  "description": "Final Project for Interactive Machine Learning (NYU Shanghai, Spring 2019)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdullahzameek/An.i.me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdullahzameek/An.i.me/issues"
+  },
+  "homepage": "https://github.com/abdullahzameek/An.i.me#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
