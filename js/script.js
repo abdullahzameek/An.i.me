@@ -1,5 +1,6 @@
 let model, img, ouputCanvas, count = 0;
 
+//main();
 
 async function main() {
     tf.disableDeprecationWarnings();
@@ -8,8 +9,8 @@ async function main() {
     const WEIGHTS_URL = './models/weights_manifest.json';
     model = await tf.loadFrozenModel(MODEL_URL, WEIGHTS_URL);
 
-    img = document.getElementById("inter");
-    outputCanvas = document.getElementById("outputcanvas");
+    img = document.getElementById('inter');
+    outputCanvas = document.getElementById('outputCanvas');
 
     predict();
 }
@@ -25,13 +26,5 @@ function predict() {
     let postprocessed_tensor = output_tensor.mul(tf.scalar(0.5)).add(tf.scalar(0.5)).squeeze();
     // output image to canvas
     tf.toPixels(postprocessed_tensor, outputCanvas);
-}
-
-function keyTyped(){
-    if(key === "t"){
-        console.log("started GAN....");
-        main();
-        console.log("GAN Done");
-    }
 }
 
