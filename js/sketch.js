@@ -26,6 +26,7 @@ function keyTyped(){
         c.loadPixels();
         console.log(c);
         base64image = c.canvas.toDataURL();
+        placeImage(base64image);
     }
     if (key === 's'){
         placeImage(base64image);
@@ -44,3 +45,18 @@ function placeImage(base64image){
 }
 
 
+function capturePlace(){
+    console.log("tried to save image");
+        var c = get(128, 0, 256, 256);
+        c.loadPixels();
+        console.log(c);
+        base64image = c.canvas.toDataURL();
+        placeImage(base64image);
+}
+
+function transform(){
+    main();
+}
+
+document.getElementById('capture1').onclick = capturePlace;
+document.getElementById('gan1').onclick = transform;

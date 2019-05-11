@@ -29,8 +29,6 @@ function predict() {
 }
 
 
-
-
 // let model;
 // let inputCanvas,outputCanvas; 
 
