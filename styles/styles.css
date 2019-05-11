@@ -1,0 +1,15 @@
+body
+{
+    background-color: black; /* The page background will be black */
+    color: white; /* The page text will be white */
+}
+
+.container {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    display: flex;
+  }
+  .container > div {
+    flex: 1; /*grow*/
+  }
