@@ -1,7 +1,5 @@
 // let model, img, ouputCanvas, count = 0;
 
-//main();
-
 async function main() {
     tf.disableDeprecationWarnings();
     // load model
