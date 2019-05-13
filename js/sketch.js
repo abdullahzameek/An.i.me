@@ -54,7 +54,9 @@ function capturePlace(){
         placeImage(base64image);
 }
 
+
 function transform(){
+    
     main();
 }
 
