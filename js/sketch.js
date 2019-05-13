@@ -58,7 +58,8 @@ function capturePlace(){
 
 
 function transform(){
-    document.getElementById('monkey').style.display = 'block';    
+    document.getElementById('monkey').style.display = 'block';
+    document.getElementById('footer').style.display = 'none';    
     main();
 }
 

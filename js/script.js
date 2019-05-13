@@ -24,6 +24,7 @@ function predict() {
     let postprocessed_tensor = output_tensor.mul(tf.scalar(0.5)).add(tf.scalar(0.5)).squeeze();
     // output image to canvas
     document.getElementById('monkey').style.display = 'none';
+    document.getElementById('footer').style.display = 'block';
     tf.toPixels(postprocessed_tensor, outputCanvas);
     
 }
