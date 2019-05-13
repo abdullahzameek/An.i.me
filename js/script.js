@@ -23,6 +23,8 @@ function predict() {
     // postprocess: float, [-1, 1], [1, 256, 256, 3]   =>   float, [0, 1], [256, 256, 3]
     let postprocessed_tensor = output_tensor.mul(tf.scalar(0.5)).add(tf.scalar(0.5)).squeeze();
     // output image to canvas
+    document.getElementById('monkey').style.display = 'none';
     tf.toPixels(postprocessed_tensor, outputCanvas);
+    
 }
 
