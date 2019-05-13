@@ -29,11 +29,20 @@ body
     margin-right: 8%;
 }
 
+
+#monkey{
+    text-align: center;
+    font-size: 20pt;
+    font-family: 'Courier New', Courier, monospace;
+    display: none;
+}
+
 .center {
     text-align: center;
     font-size: 38pt;
     font-family: 'Courier New', Courier, monospace;
 }
+
 
 .capture {
     transform:translate(510%,600%);
@@ -64,4 +73,12 @@ body
 
 .gan:hover{
     background-color: rgb(50,50,50);
+}
+
+#inter{
+    border: white solid 3px;
+}
+
+#outputCanvas{
+    border: white solid 3px;
 }
