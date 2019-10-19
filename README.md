@@ -1,7 +1,5 @@
 # An.i.me
-Final Project for Interactive Machine Learning (NYU Shanghai, Spring 2019) 
-
-As described in my previous post, I wished to explore GANs and generative art in my final project. In particular, I was very interested in cross-domain translation, and since then, I feel I’ve come a decent way in terms of understanding what sort of GAN model is used for what purposes. 
+I wished to explore GANs and generative art, in particular, I was very interested in cross-domain translation, and since then, I feel I’ve come a decent way in terms of understanding what sort of GAN model is used for what purposes. 
 After doing some initial research, I came across multiple different possibilities in terms of the possible datasets I could use. 
 Since this involves two domains, I need two datasets, namely human faces and anime faces. Getting the human faces dataset was quite easy, I used the popular CelebA dataset. Since this set came with over 250000 images, I decided to just use 25000 since that would speed up training time. (Later, I found out that 25,000 is way too much and would still be extremely slow,  so I opted for a much, much more smaller set) 
 
@@ -15,7 +13,7 @@ I decided to go with the Getchu dataset since that would mean an equal load on e
 
 Here is a sample from both datasets. 
 
-gg
+
 Getchu Dataset
 CelebA
 CelebA Dataset
